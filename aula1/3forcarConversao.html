@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Site</title>
+    <!--css no código é igual a style -->
+    <style>
+        body {
+            /*
+            comentário em CSS 
+            */
+            background-color: rgb(51, 49, 133);
+            color: white;
+            font: normal 15pt Arial;
+        }
+        h1 {
+            color: rgb(187, 187, 69);
+        }
+    </style> 
+</head>
+<body>
+    <h1>Olá mundo</h1>
+    <p>Já me livrei da maldição</p>
+    <!-- javascript no html é igual a script-->
+    <script>
+        let n1 = Number(window.prompt(`Digite um número: `))
+        // código aglutinado Number(prompt(`Digite um número:`))
+        let n2 = Number(window.prompt(`Digite outro número: `))
+        let resultado = n1 + n2
+        window.alert(`a soma de ${n1} mais ${n2} é igual a ${resultado}`)
+        window.alert(`O tipo da variável é ${typeof(resultado)}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(118, 70, 163);
+            color: cornsilk;
+            font: normal 18pt Arial;
+        }
+        h1 {
+            color: cornsilk;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aprendendo a usar <strong>DOM</strong> em java script</p>
+    <p class="id2">Aqui vai o resultado</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.innerText = `Vai se fuder`
+        p1.style.color = 'yellow'
+        let d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerHTML = `Por que essa merda não alterou`
+        let test = window.document.getElementsByClassName('id2')[0]
+        test.innerHTML = `agora vai`
+        let x = document.querySelector('div#msg')
+        x.style.color = 'blue'
+        
+    </script>
+</body>
+</html>
