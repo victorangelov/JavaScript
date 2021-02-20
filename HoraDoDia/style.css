@@ -15,6 +15,7 @@ section {
     margin: auto;
     /* sombra da caixa */ 
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.514);
+    color: black;
     
 }
 header {
@@ -27,4 +28,12 @@ footer {
     /* centralizar texto */
     text-align: center;
     font-style: italic;
+}
+
+div#txthora {
+    padding: 15px;
+}
+
+div#txtimg {
+    
 }
