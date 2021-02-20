@@ -1,12 +1,12 @@
 body {
-    background-color: rgb(114, 67, 136);
+    background-color: rgb(161, 155, 98);
     font: normal 15px Arial;
 }
 section {
     width: 500px;
-    height: 500px;
+    height: 400px;
     text-align: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     /* bordas arrendondadas */
     border-radius: 10px;
     /* espaço interno da borda da section */
@@ -16,6 +16,7 @@ section {
     /* sombra da caixa */ 
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.514);
     color: black;
+    font: normal 15pt Arial;
     
 }
 header {
@@ -35,5 +36,5 @@ div#txthora {
 }
 
 div#txtimg {
-    
+
 }
