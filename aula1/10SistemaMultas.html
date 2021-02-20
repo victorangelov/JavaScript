@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        h1{
+            color: rgb(172, 162, 25);
+            text-align: center;
+        }
+        p{
+            font:normal 18pt Arial;    
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema e Multas</h1>
+    <p>Informe a velocidade do carro: <input type="number" name="txtvel" id="txtvel">    
+    <input type="button" id="txtver" value="Verificar">
+    <div id="txtres">Verificando...</div>
+    </p>
+    <script>
+        txtver.addEventListener('click', verificar) 
+        function verificar(){
+            let vel = document.querySelector('input#txtvel')
+            let res = document.querySelector('div#txtres')
+
+            let v = Number(vel.value)
+            res.innerHTML = `Você está a ${v} km/h `
+            res.innerHTML += `<br>Dirija sempre com cinto de segurança`
+            if(v > 60){
+                res.innerHTML += `<br>Você será multado por estar acima dos 60 km/h permitidos`
+            } else {
+                res.innerHTML += `<br>Você está dentro do limite de velocidade parabéns` 
+            }
+        }
+    </script>
+    
+</body>
+</html>
