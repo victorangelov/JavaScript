@@ -14,14 +14,24 @@
     </header>
     <section>
         <div>
-           <p>Ano de Nascimento: <input type="number" name="" id="nascimentotxt"></p>
-           <p>Sexo: <input type="radio" name="sex" id="fem">Masculino 
-            <input type="radio" name="sex" id="mas">Feminino</p> 
-            <input type="button" value="Verificar" id="txtverificar">
+           <p>Ano de Nascimento: 
+               <input type="number" name="" id="txtano" min="0" max="">
+            </p>
+           <p>Sexo: 
+               <!-- CAMPO NOME DO GÊNERO DEVE SER IGUAL-->
+               <input type="radio" name="radsex" id="masc" checked>
+               <label for="masc">Masculino</label>
+               <input type="radio" name="radsex" id="fem">
+               <label for="fem">Feminino</label>
+            </p> 
+            <p>
+                <input type="button" value="Verificar" id="txtverificar">
+            </p>
         </div>
         <div id="txtres">
+            <img src="img/anonimo.png" alt="Desconhecido" id="foto">
             <p id="txtidade">Prencha os dados acima para ver o resultado</p>
-            <img src="img/anonimo.png" alt="Desconhecido" id="txtimg">
+            
             
         </div>
     </section>        
