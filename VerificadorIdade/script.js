@@ -10,7 +10,7 @@ function verificar(){
     // VARIÁVEL DA RESPOSTA
     let res = document.querySelector('div#txtres')
     // variável para imagem do html
-    
+
     // definindo variável do elemento img do html
     //let img = document.querySelector('img#txtimg')
     
@@ -25,7 +25,9 @@ function verificar(){
           let img = document.createElement('img')
           img.setAttribute('id','foto')
           //alterando imagem que já está no HTML
-          //img.src += 'img/menino.png'  
+          //img.src += 'img/menino.png' 
+          
+          //pegando dados do radio femenino masculino
           if (fsex[0].checked){
               genero = 'Masculino'
               if (idade < 5){
@@ -72,6 +74,7 @@ function verificar(){
               }
           }
           res.innerHTML = `Detectamos pessoa de gênero ${genero} com ${idade} anos`
+          //adicionando mais informações ao retorno do elemento html
           res.appendChild(img)      
     }
 }
