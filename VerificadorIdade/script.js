@@ -48,6 +48,7 @@ function verificar(){
                   //velho
               }else {
                   img.setAttribute('src', 'img/homemmaisvelho.png')
+                  res.innerHTML = `<br>Você sabia que o homem mais velho da mundo chegou a 116 anos?`
                   // bem velho
               }
           } else {
@@ -70,11 +71,12 @@ function verificar(){
                   //velho
               }else {
                   img.setAttribute('src', 'img/mulhermaisvelha.png')
+                  res.innerHTML = `<br>Você sabia que amulher mais velha do mundo chegou a ter 122 anos?`
                   // bem velho
               }
           }
-          res.innerHTML = `Detectamos pessoa de gênero ${genero} com ${idade} anos`
+          res.innerHTML += `Detectamos pessoa de gênero ${genero} com ${idade} anos`
           //adicionando mais informações ao retorno do elemento html
-          res.appendChild(img)      
+          res.appendChild(img)
     }
 }
