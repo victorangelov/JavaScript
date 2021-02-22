@@ -1,0 +1,13 @@
+let pizza = 8
+
+do {
+    console.log('vai se fuder')
+} while ( pizza > 1)
+
+while (pizza < 10){
+    console.log('vai se fuder')
+}
+
+for (let i = 0; i < 6; i++){
+    console.log('vai se fuder')
+}
