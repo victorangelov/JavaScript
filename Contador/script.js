@@ -1,34 +1,34 @@
 txtcontar.addEventListener('click', contar)
-
 function contar(){
-    let ini = document.querySelector('input#txtini')
-    let f = Number(document.querySelector('input#txtfim'))
-    let p = Number(document.querySelector('input#txtpasso'))
+    let inicio = document.querySelector('input#txtini')
+    let fim = document.querySelector('input#txtfim')
+    let passo = document.querySelector('input#txtpasso')
     let res = document.querySelector('div#txtres')
     
-    let inicio = Number(ini.value)
-    let fim = Number(f.value)
-    let passo = Number(p.value)
-    
-    let i = inicio
-
-    
-    for(let i = inicio; i <= fim; i+=passo){
-        res.innerHTML = `${i}`
-    }
-    
-    /*
-    if(inicio < 0 ){
-        res.innerHTML = `[ERRO] Impossível contar ${inicio} inválido`
-        if(passo < 1){
-            window.alert(`[ERRO] PASSO inválido, considerando PASSO 1`)
-            passo = 1
-       } 
-            //res.innerHTML += `U+1F3C1`
-    } else{
-            for(let i = inicio; i <= fim; i+=passo){
-                res.innerHTML = `${i}`
+    if(inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
+        res.innerHTML = `Impossível contar`
+    } else {
+        res.innerHTML = 'Contando: <br>'
+        let i = Number(inicio.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+        if (p <= 0){
+            window.alert(`Passo inválido! considerando passo 1`)
+            p = 1
+        }
+ 
+        if (i < f){
+            // contagem crescente
+            for(let v = i; v <= f; v += p){
+                res.innerHTML += `${v} \u{1F449}`
             }
-    }  
-    */
+ 
+        } else {
+            // contagem regressiva
+            for(let v = i; v >= f; v -= p){
+                res.innerHTML += `${v} \u{1F449}`
+            }
+        }
+        res.innerHTML += ` \u{1F3C1}` 
+    }
 }
