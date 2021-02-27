@@ -10,3 +10,6 @@ let amigo = {
 console.log(amigo.engordar(2))
 console.log(`${amigo.nome} pesa ${amigo.peso} kg`)
 
+let num = 8
+
+console.log(num **=2)
