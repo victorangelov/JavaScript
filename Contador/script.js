@@ -29,6 +29,7 @@ function contar(){
                 res.innerHTML += `${v} \u{1F449}`
             }
         }
+        //simbolos no javascript \u{}
         res.innerHTML += ` \u{1F3C1}` 
     }
 }
